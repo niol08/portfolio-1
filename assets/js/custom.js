@@ -26,7 +26,7 @@ const work = [
   {
     name: "Rest country api",
     link: " https://niol-show-projects.github.io/rest-country-api/",
-    image: "../images/rest-country-api-img.png",
+    image: "./images/rest-country-api-img.png",
     description:
       "This is a responsive website created with HTML, CSS, Vanilla JS and an API.",
     features: [
@@ -41,7 +41,7 @@ const work = [
   {
     name: "space expo",
     link: "https://space-tourism-expo.netlify.app/",
-    image: "../images/space-expo-img.png",
+    image: "./images/space-expo-img.png",
     description:
       "This is a full fledged website on space tourism. It is built with React.JS, Swiper.JS and SASS. ",
     features: ["Responsive", "Hover states", "Slider effects"],
@@ -50,7 +50,7 @@ const work = [
   {
     name: "todo app",
     link: " https://niol08.github.io/TODO__APP/",
-    image: "../images/todo-app-img.png",
+    image: "./images/todo-app-img.png",
     description:
       "This is a useful todo application created with HTML, CSS, Vanilla JS, Local storage API and a polyfill(to listen to drag events on mobile).",
     features: [
@@ -69,7 +69,7 @@ const work = [
   {
     name: "order summary card",
     link: "https://niol08.github.io/Order-summary-card-/",
-    image: "../images/order-summary-card-img.png",
+    image: "./images/order-summary-card-img.png",
     description: "This is a simple project created with just HTML and SASS",
     features: ["Responsive", "Hover states for interactive elements"],
     repo: "https://github.com/niol08/Order-summary-card-",
@@ -77,7 +77,7 @@ const work = [
   {
     name: "Advice generator",
     link: "https://advice-gen-app-08.netlify.app/",
-    image: "../images/advice-gen-app-img.png",
+    image: "./images/advice-gen-app-img.png",
     description:
       "This is an advice generator app created with React.JS, SASS, and an API. ",
     features: [
@@ -90,7 +90,7 @@ const work = [
   {
     name: "Huddle landing page",
     link: "https://niol08.github.io/huddle-landing-page/",
-    image: "../images/huddle-page-img.png",
+    image: "./images/huddle-page-img.png",
     description:
       "This is a landing  page of an hypothetical website. It was built with just HTML and SASS",
     features: ["Responsve", "Hover states", "Curved background"],
