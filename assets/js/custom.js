@@ -144,6 +144,7 @@ const displayNugget = () => {
     nugget.removeChild(item)
     nugget.classList.remove("nuggets")
     doNotClick.disabled = false
+    doNotClick.innerText = `Now click again 😇`
   }, 3000)
 }
 const type = () => {
