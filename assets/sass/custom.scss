@@ -186,6 +186,7 @@ figure:hover::before {
   display: grid;
   grid-gap: 3em;
   grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+  padding-bottom: 3rem;
 }
 
 .list-grid {
