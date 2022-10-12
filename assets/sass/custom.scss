@@ -1,0 +1,260 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.custom-header-text {
+  // font-family: "Dancing Script", cursive;
+  font-family: "Mali", cursive;
+  text-transform: uppercase;
+}
+.inner {
+  width: 90vw;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: none;
+  font-family: "Mali", cursive;
+}
+.use-middle {
+  font-family: "Mali", cursive;
+}
+.container .p {
+  font-size: 2rem;
+  // padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+  text-transform: none;
+}
+.container .p span.typed-text {
+  font-weight: bold;
+  letter-spacing: inherit;
+  text-transform: none;
+  // color: #dd7732;
+  color: aquamarine;
+}
+.container .p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container .p span.cursor.typing {
+  animation: none;
+}
+
+#intro {
+  min-height: 80vh;
+}
+.first-text {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: normal;
+  letter-spacing: 0.2rem;
+}
+.second-text {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: normal;
+  font-family: "mali", cursive;
+  color: aquamarine;
+}
+.introductory {
+  box-sizing: border-box;
+  margin-top: 5rem;
+}
+.major {
+  font-family: "mali", cursive;
+  color: aquamarine;
+}
+.clickable-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.clickable {
+  box-shadow: inset 0 0 0 1px aquamarine;
+}
+.nuggets {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  letter-spacing: 0.2rem;
+  opacity: 0;
+  transform: translateY(5rem);
+  font-family: "Mali", cursive;
+  animation: fadeInUpAndDown 3s ease-out;
+}
+#work,
+#about {
+  min-height: 80vh;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.img-parent > img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+figure:hover img {
+  transform: scale(1.05);
+}
+figure {
+  position: relative;
+  margin-bottom: 2rem;
+}
+figure::before {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  transform: skewX(-25deg);
+}
+figure:hover::before {
+  animation: shine 0.75s;
+}
+.feature-txt,
+.abt-text {
+  font-weight: 700;
+  font-family: "Mali", cursive;
+}
+.abt-text {
+  margin-bottom: 0;
+}
+.more-abt {
+  margin-bottom: 2rem;
+}
+.skills {
+  margin-bottom: 1rem;
+}
+.links {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Mali", cursive;
+  text-transform: capitalize;
+  color: aquamarine;
+}
+.abt {
+  font-size: 1.05rem;
+}
+.name {
+  margin-bottom: 0;
+  font-family: "Mali", cursive;
+}
+.desc {
+  margin-bottom: 2rem;
+}
+.card {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow-x: hidden;
+}
+.grid {
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+}
+
+.list-grid {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+  grid-gap: 1rem;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+a {
+  padding: 0 !important;
+}
+ul.icons li a {
+  // box-shadow: inset 0 0 0 1px aquamarine;
+  color: aquamarine;
+}
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+@keyframes fadeInUpAndDown {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  10% {
+    opacity: 0.5;
+    transform: translateY(2.5rem);
+  }
+  20% {
+    opacity: 0.75;
+    transform: translateY(1.25rem);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  // 60% {
+  //   opacity: 0.5;
+  //   transform: translateY(3rem);
+  // }
+  100% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@media screen and (min-width: 769px) {
+  .inner {
+    width: 40vw;
+  }
+}
