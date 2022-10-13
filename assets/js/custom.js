@@ -4,6 +4,10 @@ const intro = document.querySelector(".introductory")
 const nugget = document.querySelector(".nugget-parent")
 const doNotClick = document.querySelector(".clickable")
 const grid = document.querySelector(".grid")
+const themerParent = document.querySelector(".themes")
+const gear = document.querySelector(".fa-gear")
+const todoTheme = document.querySelector(".theme")
+const html = document.querySelector("#html")
 const nuggetArray = [
   "Welcome to my website 😇.",
   "well, don't forget to stay hydrated.",
@@ -21,7 +25,6 @@ const nuggetArray = [
 ]
 
 const textArray = ["ENIOLA OLADEJO", "a developer", "a student", "a freelancer"]
-// const fontColor = ["#00FFFF", "#00FF00", "#FFFF00", "#FF00FF"]
 const work = [
   {
     name: "Rest country api",
@@ -96,6 +99,12 @@ const work = [
     features: ["Responsve", "Hover states", "Curved background"],
     repo: "https://github.com/niol08/huddle-landing-page",
   },
+]
+const fontThemes = [
+  { name: "aquamarine", hex: "aquamarine" },
+  { name: "light-coral", hex: "#f08080" },
+  { name: "lime", hex: "#32cd32" },
+  { name: "gold", hex: "#ffd700" },
 ]
 const typingDelay = 200
 const erasingDelay = 100
@@ -178,6 +187,43 @@ const erase = () => {
     setTimeout(type, typingDelay + 1100)
   }
 }
+
+const themeSwitcher = (name) => {
+  html.className = name
+  localStorage.setItem("color", JSON.stringify(name))
+}
+const setFontColor = () => {
+  let item = JSON.parse(localStorage.getItem("color"))
+  try {
+    if (item) {
+      html.className = item
+    }
+  } catch (error) {
+    return
+  }
+}
+const createThemes = () => {
+  fontThemes.forEach((item) => {
+    const { hex, name } = item
+    const element = document.createElement("div")
+    element.classList.add("themer")
+    element.style.background = hex
+    themerParent.append(element)
+    element.addEventListener("click", () => {
+      themeSwitcher(name)
+    })
+  })
+}
+let flag = true
+const toggleTranslate = () => {
+  if (flag) {
+    todoTheme.classList.remove("translate")
+    flag = false
+  } else if (!flag) {
+    todoTheme.classList.add("translate")
+    flag = true
+  }
+}
 // ####### Event listeners #######
 document.addEventListener("DOMContentLoaded", () => {
   // On DOM Load initiate the effect
@@ -185,3 +231,6 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 doNotClick.addEventListener("click", displayNugget)
 document.addEventListener("DOMContentLoaded", portfolio)
+document.addEventListener("DOMContentLoaded", createThemes)
+document.addEventListener("DOMContentLoaded", setFontColor)
+gear.addEventListener("click", toggleTranslate)

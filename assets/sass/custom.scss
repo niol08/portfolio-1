@@ -1,9 +1,67 @@
+$font-color: var(--color);
+:root {
+  --color: aquamarine;
+}
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  position: relative;
+}
+.aquamarine {
+  --color: aquamarine;
+}
+.light-coral {
+  --color: #f08080;
+}
+.lime {
+  --color: #32cd32;
+}
+.gold {
+  --color: #ffd700;
+}
+.theme {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(0);
+  transition: all 500ms ease-out;
+}
+.translate {
+  transform: translateX(14rem);
+}
+.themes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  width: 14rem;
+}
+.fa-gear {
+  cursor: pointer;
+  animation: rotate 2s linear infinite;
+}
+.fa-gear:hover {
+  animation: none;
+}
+.themer {
+  width: 2.5rem;
+  height: 2.5rem;
+  z-index: 5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.themer:hover {
+  transform: scale(1.1);
 }
 .custom-header-text {
-  // font-family: "Dancing Script", cursive;
   font-family: "Mali", cursive;
   text-transform: uppercase;
 }
@@ -22,7 +80,6 @@ body {
 }
 .container .p {
   font-size: 2rem;
-  // padding: 0.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
   text-align: center;
@@ -33,8 +90,7 @@ body {
   font-weight: bold;
   letter-spacing: inherit;
   text-transform: none;
-  // color: #dd7732;
-  color: aquamarine;
+  color: $font-color;
 }
 .container .p span.cursor {
   display: inline-block;
@@ -71,7 +127,7 @@ body {
   font-weight: 900;
   line-height: normal;
   font-family: "mali", cursive;
-  color: aquamarine;
+  color: $font-color;
 }
 .introductory {
   box-sizing: border-box;
@@ -79,7 +135,7 @@ body {
 }
 .major {
   font-family: "mali", cursive;
-  color: aquamarine;
+  color: $font-color;
 }
 .clickable-parent {
   display: flex;
@@ -88,7 +144,7 @@ body {
   margin-top: 3rem;
 }
 .clickable {
-  box-shadow: inset 0 0 0 1px aquamarine;
+  box-shadow: inset 0 0 0 1px $font-color;
 }
 .nuggets {
   text-align: center;
@@ -104,6 +160,9 @@ body {
 #about {
   min-height: 80vh;
   overflow-x: hidden;
+}
+#work {
+  margin-top: 7vh;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -145,9 +204,12 @@ figure:hover::before {
   animation: shine 0.75s;
 }
 .feature-txt,
-.abt-text {
+.abt-text,
+.btn-txt,
+label {
   font-weight: 700;
   font-family: "Mali", cursive;
+  color: $font-color;
 }
 .abt-text {
   margin-bottom: 0;
@@ -165,7 +227,7 @@ figure:hover::before {
   justify-content: space-between;
   font-family: "Mali", cursive;
   text-transform: capitalize;
-  color: aquamarine;
+  color: $font-color;
 }
 .abt {
   font-size: 1.05rem;
@@ -173,6 +235,7 @@ figure:hover::before {
 .name {
   margin-bottom: 0;
   font-family: "Mali", cursive;
+  color: $font-color;
 }
 .desc {
   margin-bottom: 2rem;
@@ -194,6 +257,9 @@ figure:hover::before {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
   grid-gap: 1rem;
+  padding: 1rem;
+  border: 1px solid #fff;
+  border-radius: 5px;
   img {
     width: 100%;
     display: block;
@@ -201,10 +267,10 @@ figure:hover::before {
 }
 a {
   padding: 0 !important;
+  color: $font-color;
 }
 ul.icons li a {
-  // box-shadow: inset 0 0 0 1px aquamarine;
-  color: aquamarine;
+  color: $font-color;
 }
 @keyframes blink {
   0% {
@@ -240,10 +306,6 @@ ul.icons li a {
     opacity: 1;
     transform: translateY(0);
   }
-  // 60% {
-  //   opacity: 0.5;
-  //   transform: translateY(3rem);
-  // }
   100% {
     opacity: 0;
     transform: translateY(5rem);
@@ -254,6 +316,15 @@ ul.icons li a {
     left: 125%;
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media screen and (min-width: 769px) {
   .inner {
     width: 40vw;
