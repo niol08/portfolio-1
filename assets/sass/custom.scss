@@ -4,9 +4,10 @@ $font-color: var(--color);
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   position: relative;
+  overflow-x: hidden;
 }
 .aquamarine {
   --color: aquamarine;
@@ -62,7 +63,7 @@ body {
   transform: scale(1.1);
 }
 .custom-header-text {
-  font-family: "Mali", cursive;
+  font-family: 'Mali', cursive;
   text-transform: uppercase;
 }
 .inner {
@@ -73,10 +74,10 @@ body {
   justify-content: center;
   align-items: center;
   text-transform: none;
-  font-family: "Mali", cursive;
+  font-family: 'Mali', cursive;
 }
 .use-middle {
-  font-family: "Mali", cursive;
+  font-family: 'Mali', cursive;
 }
 .container .p {
   font-size: 2rem;
@@ -126,7 +127,7 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   line-height: normal;
-  font-family: "mali", cursive;
+  font-family: 'mali', cursive;
   color: $font-color;
 }
 .introductory {
@@ -134,7 +135,7 @@ body {
   margin-top: 5rem;
 }
 .major {
-  font-family: "mali", cursive;
+  font-family: 'mali', cursive;
   color: $font-color;
 }
 .clickable-parent {
@@ -153,7 +154,7 @@ body {
   letter-spacing: 0.2rem;
   opacity: 0;
   transform: translateY(5rem);
-  font-family: "Mali", cursive;
+  font-family: 'Mali', cursive;
   animation: fadeInUpAndDown 3s ease-out;
 }
 #work,
@@ -190,7 +191,7 @@ figure::before {
   left: -100%;
   z-index: 2;
   display: block;
-  content: "";
+  content: '';
   width: 50%;
   height: 100%;
   background: linear-gradient(
@@ -208,7 +209,7 @@ figure:hover::before {
 .btn-txt,
 label {
   font-weight: 700;
-  font-family: "Mali", cursive;
+  font-family: 'Mali', cursive;
   color: $font-color;
 }
 .abt-text {
@@ -225,7 +226,7 @@ label {
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
-  font-family: "Mali", cursive;
+  font-family: 'Mali', cursive;
   text-transform: capitalize;
   color: $font-color;
 }
@@ -234,7 +235,7 @@ label {
 }
 .name {
   margin-bottom: 0;
-  font-family: "Mali", cursive;
+  font-family: 'Mali', cursive;
   color: $font-color;
 }
 .desc {
