@@ -263,7 +263,6 @@ const toggleTranslate = () => {
 };
 // ####### Event listeners #######
 document.addEventListener('DOMContentLoaded', () => {
-  // On DOM Load initiate the effect
   if (textArray.length) setTimeout(type, newTextDelay + 250);
 });
 doNotClick.addEventListener('click', displayNugget);
