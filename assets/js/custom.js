@@ -47,7 +47,7 @@ const work = [
     repo: 'https://github.com/niol-show-projects/rest-country-api',
   },
   {
-    name: 'space expo',
+    name: 'Space expo',
     link: 'https://space-tourism-expo.netlify.app/',
     image: './images/space-expo-img.png',
     description:
@@ -56,7 +56,7 @@ const work = [
     repo: 'https://github.com/niol08/space-expo',
   },
   {
-    name: 'todo app',
+    name: 'Todo app',
     link: ' https://niol08.github.io/TODO__APP/',
     image: './images/todo-app-img.png',
     description:
@@ -75,7 +75,7 @@ const work = [
     repo: 'https://github.com/niol08/TODO__APP',
   },
   {
-    name: 'order summary card',
+    name: 'Order summary card',
     link: 'https://niol08.github.io/Order-summary-card-/',
     image: './images/order-summary-card-img.png',
     description: 'This is a simple project created with just HTML and SASS',
@@ -123,7 +123,7 @@ const work = [
     repo: 'https://github.com/niol08/clinicalc',
   },
   {
-    name: 'A simple ML model for predicting schizophrenia in patients',
+    name: 'ML model',
     link: 'https://schizophrenia-ml-model-v1.onrender.com/',
     image: './images/schizophrenia-model.png',
     description:
@@ -135,6 +135,46 @@ const work = [
       'Interactive UI with Streamlit',
     ],
     repo: 'https://github.com/niol08/schizophrenia-ML-model',
+  },
+  {
+    name: 'Fintrack - A finance tracking web app',
+    link: 'https://fin-track-test.vercel.app/dashboard/',
+    image: './images/fintrack.png',
+    description: 'This is a test I did for junior frontend developer role',
+    features: [
+      'Responsive',
+      'Hover states',
+      'Uses Next.js, tailwindcss, shadcn/ui and framer-motion',
+    ],
+    repo: 'https://github.com/niol08/Fin-track-test',
+  },
+  {
+    name: 'Bio-signal Chatbot',
+    link: 'https://bio-signal-chatbot.streamlit.app/',
+    image: './images/bio-signal.png',
+    description:
+      'This is a streamlit app for bio-signal analysis, you can upload bio-signal data and get insights from it. You can test up to 4 different bio-signals: EMG (electromyography), VAG (vibroathrography), ECG (electrocardiogram), and PNG (phonocardiogram). Some of the features are built on pre-trained models.',
+    features: [
+      'Responsive',
+      'AI insights',
+      'Multiple bio-signals',
+      'intuitive and easy to use',
+    ],
+    repo: 'https://github.com/niol08/Bio-signal-chatbot',
+  },
+  {
+    name: 'Medical Imaging Chatbot',
+    link: 'https://medical-imaging-chatbot.streamlit.app/',
+    image: './images/medical-imaging.png',
+    description:
+      'This is a streamlit app for medical imaging analysis, you can upload medical imaging data and get insights from it. It is built on pre-trained models.',
+    features: [
+      'Responsive',
+      'AI insights',
+      'Multiple medical imaging techniques',
+      'intuitive and easy to use',
+    ],
+    repo: 'https://github.com/niol08/Medical-imaging-chatbot',
   },
 ];
 const fontThemes = [
