@@ -123,6 +123,20 @@ const work = [
     repo: 'https://github.com/niol08/clinicalc',
   },
   {
+    name: 'Medical Imaging Chatbot',
+    link: 'https://medical-imaging-chatbot.streamlit.app/',
+    image: './images/medical-imaging.png',
+    description:
+      'This is a streamlit app for medical imaging analysis, you can upload medical imaging data and get insights from it. It is built on pre-trained models.',
+    features: [
+      'Responsive',
+      'AI insights',
+      'Multiple medical imaging techniques',
+      'intuitive and easy to use',
+    ],
+    repo: 'https://github.com/niol08/Medical-imaging-chatbot',
+  },
+  {
     name: 'ML model',
     link: 'https://schizophrenia-ml-model-v1.onrender.com/',
     image: './images/schizophrenia-model.png',
@@ -161,20 +175,6 @@ const work = [
       'intuitive and easy to use',
     ],
     repo: 'https://github.com/niol08/Bio-signal-chatbot',
-  },
-  {
-    name: 'Medical Imaging Chatbot',
-    link: 'https://medical-imaging-chatbot.streamlit.app/',
-    image: './images/medical-imaging.png',
-    description:
-      'This is a streamlit app for medical imaging analysis, you can upload medical imaging data and get insights from it. It is built on pre-trained models.',
-    features: [
-      'Responsive',
-      'AI insights',
-      'Multiple medical imaging techniques',
-      'intuitive and easy to use',
-    ],
-    repo: 'https://github.com/niol08/Medical-imaging-chatbot',
   },
 ];
 const fontThemes = [
